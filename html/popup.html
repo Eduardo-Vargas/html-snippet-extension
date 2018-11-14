@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Snippet Generator</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/main.js"></script>
+  </head>
+  <body>
+    <div class="tab-content">
+      <!-- The settings pane, expand at will -->
+      <div>
+        <form id="input_form">
+          <p class = "title">HTML Snippet Generator</p>
+          <label for="url">URL: </label>
+          <input type="text" name="url" id="url" value="URL" />
+
+          <label for="mediaType">Media Type: </label>
+          <select name="select-field" id="mediaType">
+            <option value="video">Video</option>
+            <option value="image">Image</option>
+          </select>
+
+          <label for="alignment">Alignment: </label>
+          <select name="select-field" id="alignment">
+            <option value="left">Left</option>
+            <option value="center">Center</option>
+            <option value="right">Right</option>
+          </select>
+
+          <label for="width">Width: </label> <small>use %</small>
+          <input type="number" id="width" name="text-field" value="100" />
+        </form>
+        <button type="button" class="button">Create</button>
+
+        <p id="demo"></p>
+        <p id="codeLabel"></p>
+        <p
+          id="code"
+          style="font-weight:normal; font-family:monospace; font-size: 12px"
+        ></p>
+      </div>
+    </div>
+  </body>
+</html>
