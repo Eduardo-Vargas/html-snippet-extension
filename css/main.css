@@ -1,8 +1,12 @@
 /**
  * Custom CSS may be added here.
  */
+html {
+  height: fit-content;
+}
 body {
   min-width: 357px;
+  max-width: 400px;
   min-height: 250px;
   overflow-x: hidden;
   font-weight: bold;
@@ -11,34 +15,10 @@ body {
 .title {
   text-align: center;
   font-size: 1.5em;
-  margin:0;
-  margin-bottom:1em;
-}
-.tab-pane {
-  padding-top: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin: 0;
+  margin-bottom: 1em;
 }
 
-.line {
-  font-weight: bold;
-  text-align: center;
-}
-
-.button-wrapper {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-form.settings label {
-  width: 100px;
-  display: block;
-  float: left;
-}
-
-form.settings .form-item {
-  clear: both;
-}
 .button {
   background-color: #f28301; /* Green */
   border: none;
@@ -49,6 +29,7 @@ form.settings .form-item {
   font-size: 14px;
   font-weight: bold;
   margin: 5% 40%;
+  margin-bottom: 0;
   cursor: pointer;
   border-radius: 4px;
 }
@@ -59,12 +40,22 @@ select {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid #ededed;
   border-radius: 4px;
   box-sizing: border-box;
 }
 
-.tab-content{
+#codePanel {
+  width: 100%;
+  padding: 5px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  word-wrap: break-word; /* IE */
+}
+
+.tab-content {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;

@@ -6,13 +6,14 @@
 
     <script src="../js/jquery-1.10.2.min.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/ga.js"></script>
   </head>
   <body>
     <div class="tab-content">
       <!-- The settings pane, expand at will -->
       <div>
         <form id="input_form">
-          <p class = "title">HTML Snippet Generator</p>
+          <p class="title">HTML Snippet Generator</p>
           <label for="url">URL: </label>
           <input type="text" name="url" id="url" value="URL" />
 
@@ -35,11 +36,13 @@
         <button type="button" class="button">Create</button>
 
         <p id="demo"></p>
-        <p id="codeLabel"></p>
-        <p
-          id="code"
-          style="font-weight:normal; font-family:monospace; font-size: 12px"
-        ></p>
+        <p id="codeLabel" style="margin-bottom: 0; margin-top:2em;"></p>
+        <div id="codePanel">
+          <p
+            id="code"
+            style="font-weight:normal; font-family:monospace; font-size: 12px"
+          ></p>
+        </div>
       </div>
     </div>
   </body>
