@@ -5,33 +5,37 @@ html {
   height: fit-content;
 }
 body {
-  min-width: 357px;
+  font-weight: bold;
   max-width: 400px;
   min-height: 250px;
+  min-width: 357px;
   overflow-x: hidden;
-  font-weight: bold;
 }
 
 .title {
-  text-align: center;
   font-size: 1.5em;
   margin: 0;
   margin-bottom: 1em;
+  text-align: center;
 }
 
 .button {
+  animation: yellow-pulse 1.5s 8;
   background-color: #f28301; 
   border: none;
+  border-radius: 4px;
   color: white;
-  text-align: center;
-  text-decoration: none;
+  cursor: pointer;
   display: inline-block;
   font-size: 14px;
   font-weight: bold;
+  height: 2em;
   margin: auto;
   margin-bottom: 0;
-  cursor: pointer;
-  border-radius: 4px;
+  margin-top: 1em;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
 }
 .button:focus {
   outline:0;
@@ -40,13 +44,15 @@ body {
   background-color: #ffbd45;   
 }
 .button.copy {
-  background-color: #60BA7D;
-  text-align:center;
-  width: 100%;
+  animation: green-pulse 1.5s infinite;
+  background-color: #60ba7d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-top-right-radius: 0px;
   border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  text-align:center;
+  margin-top: 0;
   padding-bottom: 0.3em;
+  width: 100%;
 }
 .button.copy:hover{
   background-color: #087f23;  
@@ -54,28 +60,48 @@ body {
 
 input,
 select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
   border: 1px solid #ededed;
   border-radius: 4px;
   box-sizing: border-box;
+  display: inline-block;
+  margin: 8px 0;
+  padding: 12px 20px;
+  width: 100%;
 }
 
 #codePanel {
-  width: 100%;
-  padding: 5px 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background: white;
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
   box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 5px 20px;
+  width: 100%;
   word-wrap: break-word; /* IE */
 }
 
 .tab-content {
-  border-radius: 5px;
   background-color: #f2f2f2;
+  border-radius: 5px;
   padding: 20px;
 }
+
+@keyframes yellow-pulse
+{
+     0% {
+          box-shadow: 0 0 0 0px rgba(240, 215, 135, 0.5);
+     }
+     100% {
+          box-shadow: 0 0 0 10px rgba(240, 215, 135, 0);
+     }
+}
+@keyframes green-pulse
+{
+     0% {
+          box-shadow: 0 0 0 0px rgba(96, 186, 125, 0.5);
+     }
+     100% {
+          box-shadow: 0 0 0 10px rgba(96, 186, 125, 0);
+     }
+}
+

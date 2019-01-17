@@ -137,5 +137,14 @@ jQuery.noConflict();
 
       alert('Code copied to clipboard.');
     });
+
+    $('#mediaType').change(function() {
+      if (demo.style.display !== 'none') {
+        demo.style.display = 'none';
+        codeLabel.style.display = 'none';
+        codePanel.style.display = 'none';
+        document.getElementById('copyButton').style.display = 'none';
+      }
+    });
   });
 })(jQuery);
