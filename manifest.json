@@ -4,7 +4,7 @@
   "name": "HTML Snippet Generator",
   "short_name": "HTML Snippets",
   "description": "HTML Snippet Generator for RTE media embedding",
-  "version": "0.0.9git ",
+  "version": "0.1.0",
 
   "browser_action": {
     "default_title": "Powered by Eduardo Vargas",

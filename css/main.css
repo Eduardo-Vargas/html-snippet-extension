@@ -20,8 +20,8 @@ body {
 }
 
 .button {
-  animation: yellow-pulse 1.5s 8;
-  background-color: #f28301; 
+  animation: yellow-pulse 1.5s infinite;
+  background-color: rgb(242, 131, 1);
   border: none;
   border-radius: 4px;
   color: white;
@@ -38,10 +38,10 @@ body {
   width: 100%;
 }
 .button:focus {
-  outline:0;
+  outline: 0;
 }
-.button:hover{
-  background-color: #ffbd45;   
+.button:hover {
+  background-color: #ffbd45;
 }
 .button.copy {
   animation: green-pulse 1.5s infinite;
@@ -49,13 +49,13 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  text-align:center;
+  text-align: center;
   margin-top: 0;
   padding-bottom: 0.3em;
   width: 100%;
 }
-.button.copy:hover{
-  background-color: #087f23;  
+.button.copy:hover {
+  background-color: #087f23;
 }
 
 input,
@@ -86,22 +86,19 @@ select {
   padding: 20px;
 }
 
-@keyframes yellow-pulse
-{
-     0% {
-          box-shadow: 0 0 0 0px rgba(240, 215, 135, 0.5);
-     }
-     100% {
-          box-shadow: 0 0 0 10px rgba(240, 215, 135, 0);
-     }
+@keyframes yellow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(242, 130, 1, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(242, 131, 1, 0);
+  }
 }
-@keyframes green-pulse
-{
-     0% {
-          box-shadow: 0 0 0 0px rgba(96, 186, 125, 0.5);
-     }
-     100% {
-          box-shadow: 0 0 0 10px rgba(96, 186, 125, 0);
-     }
+@keyframes green-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(96, 186, 125, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(96, 186, 125, 0);
+  }
 }
-
